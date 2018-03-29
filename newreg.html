@@ -1,0 +1,50 @@
+<html>
+<head>
+  <title> login </title>
+<script type="text/javascript">
+	function validate()
+	{
+		if(document.login.rollno.value=="")
+		{
+			alert("rollno cannot be empty");
+			document.login.rollno.focus();
+			return false;
+		}
+		if(document.login.password.value=="")
+		{
+			alert("password cannot be empty");
+			document.login.password.focus();
+			return false;
+		}
+
+		return true;
+	}
+	</script>
+<style>
+h2
+{
+color:red;
+}
+</style>
+</head>
+<body bgcolor="3200">
+<center>
+<font color="white" size="6">
+<H1 align="center"> UNREGISTERED USER </H1>
+
+<form name="login" action="/network/loginauth" onsubmit="return validate()">
+ <label for="username">Username:</label>
+ <input type="text"  id="rollno" name="rollno">
+<br>
+ <label for="password"> Password:</label>
+ <input type="password" id="password" name="password">
+<br>
+If you are a new user, Register here:
+<a href="regdbvalid.html">NEW USER REGISTRATION</a> <br> 
+ <input type="submit" value="login">
+ </div>
+</center>
+ </form>
+</div>
+</body>
+</html>

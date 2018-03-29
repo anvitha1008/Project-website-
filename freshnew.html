@@ -1,0 +1,41 @@
+<html>
+<head>
+  <title> login </title>
+<script type="text/javascript">
+	function validate()
+	{
+		if(document.login.rollno.value=="")
+		{
+			alert("rollno cannot be empty");
+			document.login.rollno.focus();
+			return false;
+		}
+		if(document.login.password.value=="")
+		{
+			alert("password cannot be empty");
+			document.login.password.focus();
+			return false;
+		}
+
+		return true;
+	}
+	</script>
+</head>
+<body>
+<form name="login" action="/network/loginauth1" onsubmit="return validate()">
+<label for="rollno">R o l l n o:</label>
+ <input type="text"  id="rollno" name="rollno">
+<br>
+ <label for="password"> Password:</label>
+ <input type="password" id="password" name="password"></br>
+ <input type="submit" value="login">
+<br>
+If you are a new user, Register here:
+<a href="regdbvalid.html">NEW USER REGISTRATION</a>
+<BR>
+TO POST ABOUT YOUR COOLEGE FEST,EVENTS AND ANY WORKSHOP DETAILS CLICK 
+<a href="http://localhost:8081/network/festpost.html">
+   <input type="button" value="POST" name="button" /><br>
+ </form>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<html>
+<head>
+  <title> login </title>
+<style>
+body{
+color: white;
+
+}
+#b{
+	background-color: blue;
+	font-size: 20px;
+	border-radius: 2px;
+	color:white;
+	width=20px; 	
+	height=20px;
+}
+#b1{
+	background-color: blue;
+	font-size: 15px;
+	border-radius: 2px;
+	color:white;
+	width=20px; 	
+	height=20px;
+}
+h2
+{
+color:red;
+}
+</style>
+</head>
+<body bgcolor= "black"><br><br> <center> <h1>Intra College Network</h1></center><br>
+<center><h3><form name="login" action="/network/loginauth" onsubmit="return validate()">
+<h2>Incorrect Username or Password.<br>Please try again!</h2>
+<label for="rollno">R o l l n o:</label>
+ <input type="text"  id="rollno" name="rollno">
+<br><br>
+ <label for="password"> Password:</label>
+ <input type="password" id="password" name="password"></br><br></h3>
+ <input type="submit" value="Login" id="b" >
+<br><br><br><br>
+If you are a new user, Register here:
+<a href="regdbvalid.html">NEW USER REGISTRATION</a>
+<br><br>
+TO POST ABOUT YOUR COOLEGE FEST,EVENTS AND ANY WORKSHOP DETAILS CLICK &nbsp;&nbsp;
+<a href="http://localhost:8081/network/festpost.html">
+   <input type="button" value="POST" id="b1" name="button" /><br></center>
+ </form>
+</body>
+</html>

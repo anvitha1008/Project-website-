@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>INTRA-COLLEGE NETWORK</title>
+<script type="text/javascript">
+function noBack() {
+window.history.foward();
+}
+noBack();
+window.onload=noBack;
+window.onpageshow=function(evt)
+{
+if(evt.persisted)
+	noBack();
+}
+window.onunload=function()
+{
+void(0);
+}
+</script>
+</head>
+<frameset rows="25%,75%" framespacing="0" border="0">
+<frameset rows="65%,35%">
+<frame src="title.jsp" name="a" scrolling="no"></frame>
+<frame src="icons.html" name="b" scrolling="no"></frame>
+</frameset>
+<frame src="home.html" name="d"></frame>
+</frameset>
+</html>

@@ -1,0 +1,38 @@
+<html>
+<style> 
+body{color:white }
+#b{
+	background-color: blue;
+	font-size: 15px;
+	border-radius: 2px;
+	color: white;
+}
+#b1{
+	background-color: blue;
+	font-size: 15px;
+	border-radius: 2px;
+	color:black;
+	position: absolute;
+}
+	
+</style>
+<body bgcolor=black >
+<center>
+<br><br><br><br><br><br><br><br>
+<form name="se" action="/network/searchbook">
+<select name="search" size="1" id="b">
+<option value="BOOKNAME"> Search by Book Name </option>
+<option value="AUTHOR"> Search by Author </option>
+<option value="SUBJECT"> Search by Subject </option> 
+<input type ="text" name="search1" size="52">
+<input type="submit" value="SEARCH" id="b" >
+</form> <br><br>
+
+<a href="http://localhost:8081/network/post1.html">
+   <input type="button" value="Post Books Available" id="b">&nbsp;&nbsp;
+
+<a href="http://localhost:8081/network/viewbooks">
+   <input type="button" value="View Books" id="b">
+</center>
+</body>
+</html>

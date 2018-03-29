@@ -1,0 +1,145 @@
+<html>
+<head>
+	<title> </title>
+	<script type="text/javascript">
+	function validate()
+	{
+		var namere=new RegExp("[01-25]251(a|A)(12|02|05|17|04)[a-jA-J0-9]{1}[0-9]{1}")
+		if(document.regform.roll.value=="")
+		{
+			alert(" roll cannot be empty");
+			document.regform.roll.focus();
+			return false;
+		}
+		else if(!namere.test(document.regform.roll.value))
+		{
+			alert("invalid rollno");
+			document.regform.roll.focus();
+			return false;
+		}
+		if(document.regform.password.value=="")
+		{
+			alert("password cannot be empty");
+			document.regform.password.focus();
+			return false;
+		}
+		
+		if(document.regform.name.value=="")
+		{
+			alert("name cannot be empty");
+			document.regform.name.focus();
+			return false;
+		}
+
+		var patt2=/[it/cse/eee/ece/etm]/i;
+		var bhre=new RegExp(patt2)
+		if(document.regform.bh.value=="")
+		{
+			alert("branch cannot be empty");
+			document.regform.bh.focus();
+			return false;
+		}
+		else if(!bhre.test(document.regform.bh.value))
+		{
+			alert("invalid branch");
+			document.regform.bh.focus();
+			return false;
+		}
+		
+		
+		var patt4=/[a/b]/i;
+		var secre=new RegExp(patt4)
+		if(document.regform.sec.value=="")
+		{
+			alert("section cannot be empty");
+			document.regform.sec.focus();
+			return false;
+		}
+		else if(!secre.test(document.regform.sec.value))
+		{
+			alert("invalid section");
+			document.regform.sec.focus();
+			return false;
+		}
+
+		return true;
+	}
+	</script>
+</head>
+<body>
+Rollno is already registered<br>
+	<form name="regform" action="/network/regdb" onsubmit="return validate()">
+	<table align="center">
+	
+	<tr>
+		<td> Roll No.: </td>
+		<td> <input type="text" name="roll" maxlength="12" size="10"> </td>
+	</tr> 
+	<tr>
+		<td> Password: </td>
+		<td> <input type="password" name="password" maxlength="12" size="10"> </td>
+	</tr>
+	<tr>
+		<td> Name: </td>
+		<td> <input type="text" name="name" maxlength="30" size="10"> </td>
+	</tr>
+	<tr>
+		<td> Branch: </td>
+		<td> <input type="text" name="bh" maxlength="5" size="10"> </td>
+	</tr> 
+	<tr>
+		<td> Section: </td>
+		<td> <input type="text" name="sec" maxlength="2" size="10"> </td>
+	</tr> 
+	<tr>
+		<td> Role 1: </td>
+		<td> <select name="role1" size="1"> 
+			<option value="NULL"> NULL</option>
+			<option value="CR"> Class representative </option>
+			<option value="ICR"> Inchrage class representative </option>
+			<option value="LR"> Literary represenatative </option>
+			<option value="CULREP"> Culutral represenatative </option>
+			<option value="BRCLUBREP"> Branch Tech. Club Representative </option>
+			<option value="ISTEREP"> ISTE representative </option>
+			<option value="PLACEREP">Placement Coordinators</option>
+			<option value="SPORTSREP">Sports Representative</option>
+		        </select> </td>
+	</tr>
+	<tr>
+		<td> Role 2: </td>
+		<td> <select name="role2" size="1"> 
+			<option value="NULL"> NULL</option>
+			<option value="CR"> Class representative </option>
+			<option value="ICR"> Inchrage class representative </option>
+			<option value="LR"> Literary represenatative </option>
+			<option value="CULREP"> Culutral represenatative </option>
+			<option value="BRCLUBREP"> Branch Tech. Club Representative </option>
+			<option value="ISTEREP"> ISTE representative </option>
+			<option value="PLACEREP">Placement Coordinators</option>
+			<option value="SPORTSREP">Sports Representative</option>
+		        </select>  </td>
+	</tr>
+	<tr>
+		<td> Role 3: </td>
+		<td> <select name="role3" size="1"> 
+			<option value="NULL"> NULL</option>
+			<option value="CR"> Class representative </option>
+			<option value="ICR"> Inchrage class representative </option>
+			<option value="LR"> Literary represenatative </option>
+			<option value="CULREP"> Culutral represenatative </option>
+			<option value="BRCLUBREP"> Branch Tech. Club Representative </option>
+			<option value="ISTEREP"> ISTE representative </option>
+			<option value="PLACEREP">Placement Coordinators</option>
+			<option value="SPORTSREP">Sports Representative</option>
+		        </select>  </td>
+	</tr>
+	
+	<tr>
+		<td align="center"> <input type="submit" name="sub" value="submit"> </td>
+	</tr>
+	</table>
+	</form>
+</body>
+</html>
+
+	

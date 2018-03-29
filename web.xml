@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                      http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+  version="3.0"
+  metadata-complete="true">
+
+  <display-name>Welcome to Tomcat</display-name>
+  <description>
+     Welcome to Tomcat
+  </description>
+<servlet>
+        <servlet-name>loginauth</servlet-name>
+        <servlet-class>loginauth</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>loginauth</servlet-name>
+        <url-pattern>/loginauth</url-pattern>
+    </servlet-mapping>
+<servlet>
+        <servlet-name>regdb</servlet-name>
+        <servlet-class>regdb</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>regdb</servlet-name>
+        <url-pattern>/regdb</url-pattern>
+    </servlet-mapping>
+<servlet>
+        <servlet-name>mid1</servlet-name>
+        <servlet-class>mid1</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>mid1</servlet-name>
+        <url-pattern>/mid1</url-pattern>
+    </servlet-mapping>
+<servlet>
+        <servlet-name>bookdb</servlet-name>
+        <servlet-class>bookdb</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>bookdb</servlet-name>
+        <url-pattern>/bookdb</url-pattern>
+    </servlet-mapping>
+<servlet>
+        <servlet-name>loginauth1</servlet-name>
+        <servlet-class>loginauth1</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>loginauth1</servlet-name>
+        <url-pattern>/loginauth1</url-pattern>
+    </servlet-mapping>
+
+<servlet>
+        <servlet-name>displaycomm</servlet-name>
+        <servlet-class>displaycomm</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>displaycomm</servlet-name>
+        <url-pattern>/displaycomm</url-pattern>
+    </servlet-mapping>
+<servlet>
+        <servlet-name>insertcomm</servlet-name>
+        <servlet-class>insertcomm</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>insertcomm</servlet-name>
+        <url-pattern>/insertcomm</url-pattern>
+    </servlet-mapping>
+<servlet>
+        <servlet-name>checkout</servlet-name>
+        <servlet-class>checkout</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>checkout</servlet-name>
+        <url-pattern>/checkout</url-pattern>
+    </servlet-mapping>
+<servlet>
+        <servlet-name>intermusic</servlet-name>
+        <servlet-class>intermusic</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>intermusic</servlet-name>
+        <url-pattern>/intermusic</url-pattern>
+    </servlet-mapping>
+<servlet>
+        <servlet-name>intergnits</servlet-name>
+        <servlet-class>intergnits</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>intergnits</servlet-name>
+        <url-pattern>/intergnits</url-pattern>
+    </servlet-mapping>
+<servlet>
+        <servlet-name>intertech</servlet-name>
+        <servlet-class>intertech</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>intertech</servlet-name>
+        <url-pattern>/intertech</url-pattern>
+    </servlet-mapping>
+<servlet>
+        <servlet-name>intercul</servlet-name>
+        <servlet-class>intercul</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>intercul</servlet-name>
+        <url-pattern>/intercul</url-pattern>
+    </servlet-mapping>
+<servlet>
+        <servlet-name>interiste</servlet-name>
+        <servlet-class>interiste</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>interiste</servlet-name>
+        <url-pattern>/interiste</url-pattern>
+    </servlet-mapping>
+<servlet>
+        <servlet-name>clubs</servlet-name>
+        <servlet-class>clubs</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>clubs</servlet-name>
+        <url-pattern>/clubs</url-pattern>
+    </servlet-mapping>
+
+<servlet>
+        <servlet-name>insertclub</servlet-name>
+        <servlet-class>insertclub</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>insertclub</servlet-name>
+        <url-pattern>/insertclub</url-pattern>
+    </servlet-mapping>
+<servlet>
+        <servlet-name>interlit</servlet-name>
+        <servlet-class>interlit</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>interlit</servlet-name>
+        <url-pattern>/interlit</url-pattern>
+    </servlet-mapping>
+<servlet>
+        <servlet-name>insertfest</servlet-name>
+        <servlet-class>insertfest</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>insertfest</servlet-name>
+        <url-pattern>/insertfest</url-pattern>
+    </servlet-mapping>
+
+<servlet>
+        <servlet-name>displayfest</servlet-name>
+        <servlet-class>displayfest</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>displayfest</servlet-name>
+        <url-pattern>/displayfest</url-pattern>
+    </servlet-mapping>
+<servlet>
+        <servlet-name>interfest</servlet-name>
+        <servlet-class>interfest</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>interfest</servlet-name>
+        <url-pattern>/interfest</url-pattern>
+    </servlet-mapping>
+<servlet>
+        <servlet-name>delfest</servlet-name>
+        <servlet-class>delfest</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>delfest</servlet-name>
+        <url-pattern>/delfest</url-pattern>
+    </servlet-mapping>
+
+<servlet>
+        <servlet-name>dispnewfest</servlet-name>
+        <servlet-class>dispnewfest</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>dispnewfest</servlet-name>
+        <url-pattern>/dispnewfest</url-pattern>
+    </servlet-mapping>
+
+
+<servlet>
+        <servlet-name>insertbook</servlet-name>
+        <servlet-class>insertbook</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>insertbook</servlet-name>
+        <url-pattern>/insertbook</url-pattern>
+    </servlet-mapping>
+<servlet>
+        <servlet-name>reqbook</servlet-name>
+        <servlet-class>reqbook</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>reqbook</servlet-name>
+        <url-pattern>/reqbook</url-pattern>
+    </servlet-mapping>
+
+<servlet>
+        <servlet-name>viewbooks</servlet-name>
+        <servlet-class>viewbooks</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>viewbooks</servlet-name>
+        <url-pattern>/viewbooks</url-pattern>
+    </servlet-mapping>
+<servlet>
+        <servlet-name>insertbcomm</servlet-name>
+        <servlet-class>insertbcomm</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>insertbcomm</servlet-name>
+        <url-pattern>/insertbcomm</url-pattern>
+    </servlet-mapping>
+
+<servlet>
+        <servlet-name>searchbook</servlet-name>
+        <servlet-class>searchbook</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>searchbook</servlet-name>
+        <url-pattern>/searchbook</url-pattern>
+    </servlet-mapping>
+
+</web-app>
